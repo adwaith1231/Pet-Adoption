@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:flutterproject/Pit-Stop/SignupPage.dart';
+import 'package:flutterproject/ToDo%20App/Widget/Home%20Page.dart';
+
+void main(){
+  runApp(MaterialApp(debugShowCheckedModeBanner: false,home: MyApp()) );}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.network(
+            'https://cdn.pixabay.com/photo/2024/07/13/07/40/cars-8891625_1280.jpg',
+            fit: BoxFit.cover,
+          ),
+          Container(
+            color: Colors.black.withOpacity(0.5),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Spacer(),
+                const Text(
+                  'Hey there! This is a place where all races and backgrounds come together, and everyone’s voice counts.',
+                  style: TextStyle(
+                    fontSize: 28,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 40),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white.withOpacity(0.85),
+                    padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginPage()),
+                    );
+                  },
+                  child: const Text('Sign In', style: TextStyle(color: Colors.black)),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignupPage()),
+                    );
+                  },
+                  child: const Text(
+                    'Create an account',
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                ),
+                const Spacer(),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
