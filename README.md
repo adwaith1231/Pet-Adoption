@@ -1,6 +1,6 @@
-# flutterproject
+# Pet-Adoption App
 
-A new Flutter project.
+The Pet Adoption App is a user-friendly mobile application designed to connect potential pet owners with pets in need of loving homes. It serves as a bridge between animal shelters, rescue organizations, and individuals looking to adopt pets like dogs, cats, birds, rabbits, and other animals.
 
 ## Getting Started
 
