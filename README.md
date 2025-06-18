@@ -21,3 +21,15 @@ The **Pet Adopting App** is a mobile application built using Flutter that allows
 - *Welcome page*
 
 ![image](./Asset/Images/Screenshot%202025-06-18%20082212.png)
+
+- *SignUp page*
+
+![image](./Asset/Images/Screenshot%202025-06-18%20083412.png)
+
+- *Login page*
+
+![image](./Asset/Images/Sscreenshot%202025-06-18%20083452.png)
+
+- *Home page*
+
+![image](./Asset/Images/Screenshot%202025-06-18%20083537.png)
