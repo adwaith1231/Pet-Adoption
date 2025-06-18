@@ -16,3 +16,8 @@ The **Pet Adopting App** is a mobile application built using Flutter that allows
 - Flutter (UI Framework)
 - Dart (Programming Language)
 - (Optional: Firebase for backend / authentication / database if used)
+
+*Screenshots*
+- *Welcome page*
+
+![image](./Asset/Images/Screenshot%202025-06-18%20082212.png)
